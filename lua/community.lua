@@ -12,5 +12,6 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
   -- import/override with your plugins folder
 }
