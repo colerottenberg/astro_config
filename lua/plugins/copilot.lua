@@ -4,10 +4,12 @@ return {
     suggestion = {
       keymap = {
         accept = "<C-a>",
-        next = "<C-.>",
-        prev = "<C-,>",
+        accept_word = "<C-.>",
         dismiss = "<C/>",
       },
+    },
+    filetypes = {
+      markdown = true,
     },
   },
 }
