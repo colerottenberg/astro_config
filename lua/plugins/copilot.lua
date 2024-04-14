@@ -4,7 +4,7 @@ return {
     suggestion = {
       keymap = {
         accept = "<C-a>",
-        accept_word = "<C-.>",
+        accept_word = "<C-,>",
         dismiss = "<C/>",
       },
     },
