@@ -12,5 +12,6 @@ return {
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.markdown-and-latex.vimtex" },
+  { import = "astrocommunity.code-runner.executor-nvim" },
   -- import/override with your plugins folder
 }
