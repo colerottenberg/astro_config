@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
@@ -46,6 +46,12 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      arduino_language_server = {
+        cmd = {
+          "arduino-language-server -clangd /home/crott/.local/share/nvim/mason/bin/clangd -cli /home/crott/local/bin/arduino-cli -cli-config /home/crott/.arduino15/arduino-cli.yaml -fqbn teensy:avr:teensy41",
+        },
+        filetypes = { "arduino" },
+      },
     },
     -- customize how language servers are attached
     handlers = {
