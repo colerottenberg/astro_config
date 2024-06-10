@@ -48,7 +48,23 @@ return {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
       arduino_language_server = {
         cmd = {
-          "arduino-language-server -clangd /home/crott/.local/share/nvim/mason/bin/clangd -cli /home/crott/local/bin/arduino-cli -cli-config /home/crott/.arduino15/arduino-cli.yaml -fqbn teensy:avr:teensy41",
+          "arduino-language-server",
+          "-clangd",
+          "clangd",
+          "-cli",
+          "arduino-cli",
+          "-cli-config",
+          "/home/crott/.arduino15/arduino-cli.yaml",
+          "-fqbn",
+          "teensy:avr:teensy41",
+        },
+        capabilities = {
+          textDocument = {
+            semanticTokens = vim.NIL,
+          },
+          workspace = {
+            semanticTokens = vim.NIL,
+          },
         },
         filetypes = { "arduino" },
       },
