@@ -13,5 +13,6 @@ return {
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.code-runner.executor-nvim" },
+  { import = "astrocommunity.pack.cpp" },
   -- import/override with your plugins folder
 }
