@@ -14,5 +14,9 @@ return {
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.code-runner.executor-nvim" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.colorscheme.oxocarbon-nvim" },
+  { import = "astrocommunity.colorscheme.rose-pine" },
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.colorscheme.nord-nvim" },
   -- import/override with your plugins folder
 }
