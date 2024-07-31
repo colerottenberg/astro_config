@@ -14,19 +14,10 @@ return {
           return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match "%s" == nil
         end
         if not opts.mapping then opts.mapping = {} end
-        opts.mapping["<Tab>"] = cmp.mapping(function(fallback)
-          if copilot.is_visible() then
-            copilot.accept()
-          elseif cmp.visible() then
-            cmp.select_next_item()
-          elseif luasnip.expand_or_jumpable() then
-            luasnip.expand_or_jump()
-          elseif has_words_before() then
-            cmp.complete()
-          else
-            fallback()
-          end
-        end, { "i", "s" })
+
+        opts.mapping["<C-a>"] = cmp.mapping(function()
+          if copilot.is_visible() then copilot.accept() end
+        end)
 
         opts.mapping["<C-x>"] = cmp.mapping(function()
           if copilot.is_visible() then copilot.next() end
@@ -36,11 +27,7 @@ return {
           if copilot.is_visible() then copilot.prev() end
         end)
 
-        opts.mapping["<C-.>"] = cmp.mapping(function()
-          if copilot.is_visible() then copilot.accept_word() end
-        end)
-
-        opts.mapping["<C-l>"] = cmp.mapping(function()
+        opts.mapping["<C-left>"] = cmp.mapping(function()
           if copilot.is_visible() then copilot.accept_word() end
         end)
 
