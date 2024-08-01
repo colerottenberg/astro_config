@@ -25,5 +25,12 @@ return {
       { silent = true },
       desc = "Conditional Breakpoint",
     },
+    -- Function key mappings
+    {
+      "<F9>",
+      function() require("persistent-breakpoints.api").toggle_breakpoint() end,
+      { silent = true },
+      desc = "Toggle Breakpoint",
+    },
   },
 }
