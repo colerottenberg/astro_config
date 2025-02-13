@@ -8,6 +8,7 @@ return {
   -- { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.melange-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.pack.cpp" },
